@@ -1,1 +1,0 @@
-aws s3 cp --recursive --acl public-read ./build s3://application-1-75139724085/
