@@ -46,6 +46,13 @@ jobs:
           command: |
             npm run backend:deploy
       - run:
+        name: Install pip and tools
+        command: |
+          curl -O https://bootstrap.pypa.io/get-pip.py
+          python get-pip.py --user
+          python -m pip install awsebcli --upgrade --user
+          echo 'export PATH=~/.local/bin/:$PATH' >> $BASH_ENV
+      - run:
           name: Setup Environment Variables
           command: |
             eb setenv FIRST_NAME=Mustafa
