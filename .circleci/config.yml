@@ -3,6 +3,10 @@ orbs:
   # orgs contain basc recipes and reproducible actions (install node, aws, etc.)
   node: circleci/node@4.1.0
   aws-cli: circleci/aws-cli@1.3.1
+  # Pull Requests builds so that each time opening a pull request against the main branch, tests and build are executed.
+on:
+  pull_request:
+    branches: [ main ]
   # different jobs are calles later in the workflows sections
 jobs:
   build:
@@ -22,6 +26,10 @@ jobs:
           name: Back-End Install
           command: |
             npm run backend:install
+      - run:
+          name: Front-End Test
+          command: |
+            npm run frontend:test
       - run:
           name: Front-End Build
           command: |
