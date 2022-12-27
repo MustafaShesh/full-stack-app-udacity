@@ -19,8 +19,9 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - node/install
-      - checkout
       - aws-cli/setup
+      - aws-elastic-beanstalk/setup
+      - checkout
       # install dependencies in both apps
       - run:
           name: Front-End Install
