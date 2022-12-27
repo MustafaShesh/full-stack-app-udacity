@@ -31,8 +31,6 @@ In this project a newly developed Full-Stack application built for a retailer an
 6. Front-End Build
 7. Back-End Build
 8. Deploy App
-9. AWS architecture diagram.
-(https://lucid.app/lucidchart/b2429187-d1d0-4d19-ab95-52abc1b8e120/edit?viewport_loc=32%2C-7%2C2155%2C1140%2C0_0&invitationId=inv_8ec0d6b7-ce79-4303-a1ee-1e02e6d3e376)
 
 
 ### Installation
@@ -46,7 +44,8 @@ Provision the necessary AWS services needed for running the application:
 3. frontend link. (http://application-1-75139724085.s3-website-us-east-1.amazonaws.com/)
 4. From the root of the repo, navigate udagram-api folder `cd reactnd-contacts-server` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
 5. Without closing the terminal in step 1, navigate to the udagram-frontend `cd reactnd-contacts-complete` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
-
+6. AWS architecture diagram.
+(https://lucid.app/lucidchart/b2429187-d1d0-4d19-ab95-52abc1b8e120/edit?viewport_loc=32%2C-7%2C2155%2C1140%2C0_0&invitationId=inv_8ec0d6b7-ce79-4303-a1ee-1e02e6d3e376)
 
 ## Testing
 
