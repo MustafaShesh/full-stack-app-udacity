@@ -46,7 +46,7 @@ jobs:
       - run:
           name: EB Create
           command: |
-            eb init application-1 -r $AWS_DEFAULT_REGION -p "Node.js 16 running on 64bit Amazon Linux 2"
+            eb init --platform node.js --region us-east-1
       - run:
           name: Back-End Deploy
           command: |
