@@ -1,1 +1,1 @@
-web: npm start
+web: node ./reactnd-contacts-server/server.js
