@@ -12,7 +12,7 @@
     "clean": "rm -rf www",
     "build": "mkdir www && cp -rf client/ www/client && cp -rf node_modules www/node_modules && cp -rf public/ www/public && cp config.js contacts.js server.js package.json Procfile .npmrc www",
     "zip": "cd www && zip -r -D ../app.zip .",
-    "deploy": "npm run build && npm run zip && eb list && eb use Application1-dev && eb deploy"
+    "deploy": "npm run zip && eb list && eb use Application1-dev && eb deploy"
   },
   "main": "server.js"
 }
