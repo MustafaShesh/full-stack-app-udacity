@@ -22,10 +22,6 @@ jobs:
       - aws-cli/setup
       - aws-elastic-beanstalk/setup
       - checkout
-      - save_cache:
-          paths:
-            - node_modules
-            key: v1-dependencies-{{ checksum "package.json" }}
       # install dependencies in both apps
       - run:
           name: Front-End Install
