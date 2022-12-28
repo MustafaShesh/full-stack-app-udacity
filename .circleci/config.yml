@@ -41,7 +41,7 @@ jobs:
           command: |
             npm run frontend:deploy
       - run:
-          name: EB Create
+          name: Set Up The Environment Variables To The ElasticBeanstalk
           command: |
             eb init application-1 --platform "Node.js 16 running on 64bit Amazon Linux 2" --region $AWS_DEFAULT_REGION
       - run:
@@ -51,4 +51,4 @@ jobs:
       - run:
           name: Setup Environment Variables
           command: |
-            eb setenv FIRST_NAME=Mustafa
+            eb setenv FIRST_NAME=$NAME
